@@ -3,4 +3,4 @@ project(Lab3)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Lab3 main.cpp Stack.cpp Stack.hpp)
+add_executable(Lab3 main.cpp myStack.cpp myStack.hpp)
