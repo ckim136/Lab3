@@ -5,7 +5,7 @@
 #include "catch.hpp"
 #include "myStack.hpp"
 
-// Test Stack
+// Test Stack if it can push integers
 TEST_CASE("A stack was created", "testStack"){
     myStack tester;
     REQUIRE(tester.push(1) == true);
@@ -73,6 +73,22 @@ TEST_CASE("Top element of this stack", "testTop"){
 }
 
 TEST_CASE("Unable to add new element, top element remains the same", "testTop2"){
+myStack tester;
+tester.push(1);
+tester.push(2);
+tester.push(3);
+tester.push(4);
+tester.push(5);
+tester.push(6);
+tester.push(7);
+tester.push(8);
+tester.push(9);
+tester.push(10);
+
+tester.push(11);
+tester.push(12);
+
+REQUIRE(tester.top() == 10);
 
 }
 //Test Pop Function

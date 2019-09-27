@@ -1,6 +1,13 @@
 #include <iostream>
+#include "myStack.hpp"
 
-int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
-}
+//int main() {
+//    myStack stackArray;
+//    stackArray.pop();
+//// cout << stackArray.full()<<endl;
+//   cout << stackArray.top();
+//    stackArray.pop();
+//
+//    cout<< stackArray.print();
+//    return 0;
+//}
