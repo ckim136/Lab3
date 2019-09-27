@@ -5,6 +5,9 @@
 #ifndef LAB3_MYSTACK_HPP
 #define LAB3_MYSTACK_HPP
 #include <vector>
+#include <string>
+#include <iostream>
+
 constexpr int size = 10;
 using namespace std;
 class myStack{
@@ -18,6 +21,8 @@ public:
     int top() const ;
     bool empty() const;
     bool full() const;
+    string print() const;
+    int getIndex() const;
 
 
 };

@@ -19,7 +19,12 @@ bool myStack::push(int newInt) {
 }
 
 void myStack::pop() {
-    currentTop -= 1;
+    if(stackArray.empty()){
+        //cout << "The stack is currently empty" << endl;
+    } else{
+        currentTop -= 1;
+    }
+
 }
 
 int myStack::top() const {
@@ -41,4 +46,17 @@ bool myStack::full() const{
     return false;
 }
 
+string myStack::print() const {
+    cout<< "Contents of the stack" << endl;
+    string output;
+    for (int i = 0 ; i<=currentTop ; i++) {
+        output.append(to_string(stackArray[i]));
+        output.append("\n");
+    }
+    return output;
+}
+
+int myStack::getIndex() const {
+    return currentTop;
+}
 
